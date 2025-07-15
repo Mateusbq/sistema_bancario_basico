@@ -1,7 +1,7 @@
 # Sistema Bancário Básico
 Este é um sistema bancário básico feito em python que tem três funcionalidades: 
   ## Depósito:
-    Uma quantidade ilimitada pode ser depositada (obviamente tendo que ser maior que zero).
+    Uma quantidade ilimitada pode ser depositada (tendo que ser maior que zero).
 
   ## Saque:
     Por dia podem ser realizados três saques com o valor máximo de R$500,00 (novamente, tendo que ser um valor maior que zero).
