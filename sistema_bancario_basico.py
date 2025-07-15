@@ -24,8 +24,10 @@ while True:
         valor = float(input("Qual o valor que será depositado?\nR$"))
         if valor <= 0:
             print("\n[ERRO] Por favor, digite um valor a partir de R$1.00")
-        saldo = saldo + valor
-    
+        else:
+            saldo = saldo + valor
+            extrato += f"+ R${valor}"
+
 
     elif opcao == "s":
         print("\n-> ÁREA DE SAQUES\n")
@@ -43,11 +45,16 @@ while True:
 
         else:
              saldo = saldo - valor
-
+             extrato += f"- R${valor}"
 
     elif opcao == "e":
-         print("\n-> EXTRATO\n")
-         print(f"Você tem R${saldo} disponiveis na sua conta.")
+        print("\n-> EXTRATO")
+        if extrato == "":
+            print("\nNão foram realizadas movimentações\n")
+
+        else:
+            print(f"\n {extrato}" )
+            print(f"\nVocê tem R${saldo} disponiveis na sua conta.")
         
     
     elif opcao == "q":
