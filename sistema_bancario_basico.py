@@ -1,4 +1,4 @@
-# Criação das variáveis nescessárias
+# Criação das variáveis necessárias
 menu = """
 ---------------BANCO BENÍCIO--------------
 
