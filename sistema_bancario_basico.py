@@ -30,6 +30,7 @@ while True:
             saldo = saldo + valor
             #Faz com que todo valor gigitado entre no extrato
             extrato += f"Depósito: R${valor}\n"
+            print("Depósito realizado com suscesso!")
 
         print("--------------------------------------")
 
@@ -59,13 +60,14 @@ while True:
                 extrato += f"Saque: R${valor:.2f}\n"
                 # Faz a contagem da quantidade de saques
                 LIMITE_SAQUES = LIMITE_SAQUES - 1
+                print("Saque realizado com suscesso!")
 
             print("\n-------------------------------------\n")
 
 
     # Configuração do extrato
     elif opcao == "e":
-        print("\n============== EXTRATO ==============\n")
+        print("\n============== EXTRATO ==============")
         # Caso não haja nada no extrato a mensagem abaixo será exibida
         if extrato == "":
             print("\nNão foram realizadas movimentações\n")
